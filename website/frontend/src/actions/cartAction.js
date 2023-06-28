@@ -4,7 +4,7 @@ import axios from "axios";
 
 // Add to Cart
 export const addItemsToCart = (id, quantity) => async (dispatch, getState) => {
-  const response = await axios.get(`http://localhost:8000/api/v1/products/product/${id}`);
+  const response = await axios.get(`https://ecommerce-website-ufpp.onrender.com/api/v1/products/product/${id}`);
   const { cart } = getState();
 
   dispatch({
@@ -45,7 +45,7 @@ export const saveShippingInfo = (data) => async (dispatch) => {
 
 // Add to wishlist
 export const addItemsToWishlist = (id) => async (dispatch, getState) => {
-  const response = await axios.get(`http://localhost:8000/api/v1/products/product/${id}`);
+  const response = await axios.get(`https://ecommerce-website-ufpp.onrender.com/api/v1/products/product/${id}`);
 
   const { wishlist } = getState();
 
