@@ -13,7 +13,7 @@ export const register = (formData) => async (dispatch) => {
   try {
     dispatch({ type: REGISTER_USER_REQUEST });
 
-    const response = await axios.post('http://localhost:8000/api/v1/user/register', formData, {
+    const response = await axios.post('https://ecommerce-website-ufpp.onrender.com/api/v1/user/register', formData, {
       headers: { 'Content-Type': 'multipart/form-data', },
     });
     
@@ -43,7 +43,7 @@ export const loadUser = () => async (dispatch) => {
   try {
     dispatch({ type: LOAD_USER_REQUEST });
 
-    const response = await axios.get(`http://localhost:8000/api/v1/user/me`);
+    const response = await axios.get(`https://ecommerce-website-ufpp.onrender.com/api/v1/user/me`);
 
     dispatch({ type: LOAD_USER_SUCCESS, payload: response.data.user });
   } catch (error) {
@@ -54,7 +54,7 @@ export const loadUser = () => async (dispatch) => {
 // Logout User
 export const logout = () => async (dispatch) => {
   try {
-    await axios.get(`http://localhost:8000/api/v1/user/logout`);
+    await axios.get(`https://ecommerce-website-ufpp.onrender.com/api/v1/user/logout`);
 
     dispatch({ type: LOGOUT_SUCCESS });
   } catch (error) {
@@ -68,7 +68,7 @@ export const updateProfile = (formData, id) => async (dispatch) => {
     dispatch({ type: UPDATE_PROFILE_REQUEST });
 
     formData.append('id', id); 
-    const response = await axios.put(`http://localhost:8000/api/v1/user/me/update`, formData, {
+    const response = await axios.put(`https://ecommerce-website-ufpp.onrender.com/api/v1/user/me/update`, formData, {
       headers: { 'Content-Type': 'multipart/form-data', },
     });
 
@@ -83,7 +83,7 @@ export const updatePassword = (formData, id) => async (dispatch) => {
   try {
     dispatch({ type: UPDATE_PASSWORD_REQUEST });
 
-    const response = await axios.put( `http://localhost:8000/api/v1/user/password/update`, { formData, id }, {
+    const response = await axios.put( `https://ecommerce-website-ufpp.onrender.com/api/v1/user/password/update`, { formData, id }, {
         headers: { 'Content-Type': 'application/json' },
     });
 
@@ -98,7 +98,7 @@ export const forgotPassword = (formData) => async (dispatch) => {
   try {
     dispatch({ type: FORGOT_PASSWORD_REQUEST });
 
-    const response = await axios.post('http://localhost:8000/api/v1/user/password/forget', formData, {
+    const response = await axios.post('https://ecommerce-website-ufpp.onrender.com/api/v1/user/password/forget', formData, {
       headers: { 'Content-Type': 'application/json', },
     });
 
@@ -113,7 +113,7 @@ export const resetPassword = (token, formData) => async (dispatch) => {
   try {
     dispatch({ type: RESET_PASSWORD_REQUEST });
 
-    const response = await axios.put( `http://localhost:8000/api/v1/user/password/reset/${token}`, formData,
+    const response = await axios.put( `https://ecommerce-website-ufpp.onrender.com/api/v1/user/password/reset/${token}`, formData,
       { headers: { 'Content-Type': 'application/json', }, 
     });
 
@@ -128,7 +128,7 @@ export const getAllUsers = () => async (dispatch) => {
   try {
     dispatch({ type: ALL_USERS_REQUEST });
 
-    const response = await axios.get(`http://localhost:8000/api/v1/user/admin/users`);
+    const response = await axios.get(`https://ecommerce-website-ufpp.onrender.com/api/v1/user/admin/users`);
 
     dispatch({ type: ALL_USERS_SUCCESS, payload: response.data.users });
   } catch (error) {
@@ -141,7 +141,7 @@ export const getUserDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: USER_DETAILS_REQUEST });
 
-    const response = await axios.get(`http://localhost:8000/api/v1/user/admin/user/${id}`);
+    const response = await axios.get(`https://ecommerce-website-ufpp.onrender.com/api/v1/user/admin/user/${id}`);
 
     dispatch({ type: USER_DETAILS_SUCCESS, payload: response.data.user });
   } catch (error) {
@@ -155,7 +155,7 @@ export const updateUser = (id, userData) => async (dispatch) => {
     dispatch({ type: UPDATE_USER_REQUEST });
 
     const config = { headers: { "Content-Type": "application/json" } };
-    const response = await axios.put( `http://localhost:8000/api/v1/user/admin/user/${id}`, userData, config );
+    const response = await axios.put( `https://ecommerce-website-ufpp.onrender.com/api/v1/user/admin/user/${id}`, userData, config );
 
     dispatch({ type: UPDATE_USER_SUCCESS, payload: response.data.success });
   } catch (error) {
@@ -168,7 +168,7 @@ export const deleteUser = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_USER_REQUEST });
 
-    const response = await axios.delete(`http://localhost:8000/api/v1/user/admin/user/${id}`);
+    const response = await axios.delete(`https://ecommerce-website-ufpp.onrender.com/api/v1/user/admin/user/${id}`);
 
     dispatch({ type: DELETE_USER_SUCCESS, payload: response.data });
   } catch (error) {
