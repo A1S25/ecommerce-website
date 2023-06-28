@@ -28,7 +28,7 @@ export const login = (formData) => async (dispatch) => {
   try {
     dispatch({ type: LOGIN_REQUEST });
 
-    const response = await axios.post(`http://ecommerce-website-ufpp.onrender.com/api/v1/user/login`, formData, {
+    const response = await axios.post(`https://ecommerce-website-ufpp.onrender.com/api/v1/user/login`, formData, {
       headers: { 'Content-Type': 'application/json', },
     });
 
