@@ -12,7 +12,7 @@ export const createOrder = (order) => async (dispatch) => {
   try {
     dispatch({ type: CREATE_ORDER_REQUEST });
 
-    const response = await axios.post("http://localhost:8000/api/v1/orders/order/new", order, {
+    const response = await axios.post("https://ecommerce-website-ufpp.onrender.com/api/v1/orders/order/new", order, {
       headers: { 'Content-Type': 'application/json', },
     });
     console.log(response.data);
@@ -27,7 +27,7 @@ export const myOrders = (id) => async (dispatch) => {
   try {
     dispatch({ type: MY_ORDERS_REQUEST });
 
-    const response = await axios.post("http://localhost:8000/api/v1/orders/orders/me", id);
+    const response = await axios.post("https://ecommerce-website-ufpp.onrender.com/api/v1/orders/orders/me", id);
     console.log(response.data);
     dispatch({ type: MY_ORDERS_SUCCESS, payload: response.data.orders });
   } catch (error) {
@@ -43,7 +43,7 @@ export const getAllOrders = () => async (dispatch) => {
   try {
     dispatch({ type: ALL_ORDERS_REQUEST });
 
-    const response = await axios.get("http://localhost:8000/api/v1/orders/admin/orders");
+    const response = await axios.get("https://ecommerce-website-ufpp.onrender.com/api/v1/orders/admin/orders");
 
     dispatch({ type: ALL_ORDERS_SUCCESS, payload: response.data.orders });
   } catch (error) {
@@ -62,7 +62,7 @@ export const updateOrder = (id, order) => async (dispatch) => {
       },
     };
     const response = await axios.put(
-      `http://localhost:8000/api/v1/orders/admin/order/${id}`,
+      `https://ecommerce-website-ufpp.onrender.com/api/v1/orders/admin/order/${id}`,
       order,
       config
     );
@@ -81,7 +81,7 @@ export const deleteOrder = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_ORDER_REQUEST });
 
-    const response = await axios.delete(`http://localhost:8000/api/v1/orders/admin/order/${id}`);
+    const response = await axios.delete(`https://ecommerce-website-ufpp.onrender.com/api/v1/orders/admin/order/${id}`);
 
     dispatch({ type: DELETE_ORDER_SUCCESS, payload: response.data.success });
   } catch (error) {
@@ -96,7 +96,7 @@ export const getOrderDetails = (id) => async (dispatch) => {
 
     console.log(id);
 
-    const response = await axios.get(`http://localhost:8000/api/v1/orders/order/${id}`);
+    const response = await axios.get(`https://ecommerce-website-ufpp.onrender.com/api/v1/orders/order/${id}`);
 
     console.log("order : " + JSON.stringify(response.data));
 
