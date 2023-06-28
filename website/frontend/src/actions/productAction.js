@@ -15,8 +15,8 @@ export const getProduct =
       try {
         dispatch({ type: ALL_PRODUCT_REQUEST });
 
-        let link = `http://localhost:8000/api/v1/products/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
-        if (category) { link = `http://localhost:8000/api/v1/products/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`; }
+        let link = `https://ecommerce-website-ufpp.onrender.com/api/v1/products/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
+        if (category) { link = `https://ecommerce-website-ufpp.onrender.com/api/v1/products/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`; }
         const response = await axios.get(link);
 
         dispatch({ type: ALL_PRODUCT_SUCCESS, payload: response.data, });
@@ -30,7 +30,7 @@ export const getAdminProduct = () => async (dispatch) => {
   try {
     dispatch({ type: ADMIN_PRODUCT_REQUEST });
 
-    const response = await axios.get("http://localhost:8000/api/v1/products/admin/products");
+    const response = await axios.get("https://ecommerce-website-ufpp.onrender.com/api/v1/products/admin/products");
 
     dispatch({ type: ADMIN_PRODUCT_SUCCESS, payload: response.data.products, });
   } catch (error) {
@@ -43,7 +43,7 @@ export const createProduct = (formData) => async (dispatch) => {
   try {
     dispatch({ type: NEW_PRODUCT_REQUEST });
 
-    const response = await axios.post(`http://localhost:8000/api/v1/products/admin/product/new`, formData, {
+    const response = await axios.post(`https://ecommerce-website-ufpp.onrender.com/api/v1/products/admin/product/new`, formData, {
       headers: { 'Content-Type': 'multipart/form-data', },
     });
 
@@ -58,7 +58,7 @@ export const updateProduct = (id, formData) => async (dispatch) => {
   try {
     dispatch({ type: UPDATE_PRODUCT_REQUEST });
 
-    const response = await axios.put(`http://localhost:8000/api/v1/products/admin/product/${id}`, formData, {
+    const response = await axios.put(`https://ecommerce-website-ufpp.onrender.com/api/v1/products/admin/product/${id}`, formData, {
       headers: { 'Content-Type': 'multipart/form-data', },
     });
 
@@ -73,7 +73,7 @@ export const deleteProduct = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_PRODUCT_REQUEST });
 
-    const response = await axios.delete(`http://localhost:8000/api/v1/products/admin/product/${id}`);
+    const response = await axios.delete(`https://ecommerce-website-ufpp.onrender.com/api/v1/products/admin/product/${id}`);
 
     dispatch({ type: DELETE_PRODUCT_SUCCESS, payload: response.data.success, });
   } catch (error) {
@@ -86,7 +86,7 @@ export const getProductDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
-    const response = await axios.get(`http://localhost:8000/api/v1/products/product/${id}`);
+    const response = await axios.get(`https://ecommerce-website-ufpp.onrender.com/api/v1/products/product/${id}`);
 
     dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: response.data.product, });
   } catch (error) {
@@ -99,7 +99,7 @@ export const newReview = (formData) => async (dispatch) => {
   try {
     dispatch({ type: NEW_REVIEW_REQUEST });
 
-    const response = await axios.put(`http://localhost:8000/api/v1/products/review`, { formData }, {
+    const response = await axios.put(`https://ecommerce-website-ufpp.onrender.com/api/v1/products/review`, { formData }, {
       headers: { 'Content-Type': 'application/json' },
     });
 
@@ -115,7 +115,7 @@ export const getAllReviews = (id) => async (dispatch) => {
   try {
     dispatch({ type: ALL_REVIEW_REQUEST });
 
-    const response = await axios.get(`http://localhost:8000/api/v1/products/reviews?id=${id}`);
+    const response = await axios.get(`https://ecommerce-website-ufpp.onrender.com/api/v1/products/reviews?id=${id}`);
 
     dispatch({ type: ALL_REVIEW_SUCCESS, payload: response.data.reviews, });
   } catch (error) {
@@ -129,7 +129,7 @@ export const deleteReviews = (reviewId, productId) => async (dispatch) => {
     dispatch({ type: DELETE_REVIEW_REQUEST });
 
     const response = await axios.delete(
-      `http://localhost:8000/api/v1/products/reviews?id=${reviewId}&productId=${productId}`
+      `https://ecommerce-website-ufpp.onrender.com/api/v1/products/reviews?id=${reviewId}&productId=${productId}`
     );
 
     dispatch({ type: DELETE_REVIEW_SUCCESS, payload: response.data.success, });
