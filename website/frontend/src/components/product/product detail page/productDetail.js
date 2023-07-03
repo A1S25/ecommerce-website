@@ -85,7 +85,7 @@ export default function ProductDetail() {
                     <MetaData title="Product Detail Page" />
             
                     <Grid container spacing={2} style={{ marginTop: '10px' }}>
-                        <Grid item xs={4} className={classes.carousel} style={{ paddingLeft: '15px' }}>
+                        <Grid item xs={12} sm={4} className={classes.carousel} style={{ paddingLeft: '15px' }}>
                             <Slider {...settings}>
                                 {product.image && product.image.map((image, index) => (
                                     <img key={index} src={image.url} alt={`Carousel ${index}`} />
@@ -93,7 +93,7 @@ export default function ProductDetail() {
                             </Slider>
                         </Grid>
 
-                        <Grid item xs={4} style={{ paddingLeft: '60px' }}>
+                        <Grid item xs={12} sm={8}  lg={4} style={{ paddingLeft: '60px' }}>
                             <h2 className={classes.productName}>{product.name}</h2>
                             <p className={classes.productId}>Product # {product._id}</p>
                             <Rating {...options} className={classes.rating} style={{ marginTop: '10px' }} />
@@ -101,7 +101,7 @@ export default function ProductDetail() {
                             <h1 className={classes.price} style={{ paddingLeft: '60px' }} >{`₹${product.price}`}</h1>
                         </Grid>
 
-                        <Grid item xs={4} style={{ paddingLeft: '60px' }} className={classes.section3}>
+                        <Grid item xs={12} sm={4} lg={4} style={{ paddingLeft: '60px' }} className={classes.section3}>
                             <Grid container alignItems="center">
                                 <Grid item>
                                     <button className={classes.quantityButton} onClick={decreaseQuantity}>-</button>
