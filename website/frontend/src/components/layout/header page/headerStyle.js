@@ -46,6 +46,16 @@ export const useStyleHeader = makeStyles((theme) => ({
     hamburgerIcon: {
         marginRight: theme.spacing(2),
     },
+    navigationLinks1: {
+        display: 'none', // Hide by default
+        [theme.breakpoints.up('lg')]: {
+          display: 'flex', // Display on large screens and above
+          alignItems: 'center',
+          '& > *': {
+            marginRight: theme.spacing(2),
+          },
+        },
+      },
     navigationLinks: {
         display: 'flex',
         alignItems: 'center',
@@ -53,12 +63,23 @@ export const useStyleHeader = makeStyles((theme) => ({
             marginRight: theme.spacing(2),
         },
     },
+    navigationLinks2: {
+        display: 'none', // Hide by default
+        [theme.breakpoints.up('md')]: {
+          display: 'flex', // Display on large screens and above
+          alignItems: 'center',
+          '& > *': {
+            marginRight: theme.spacing(2),
+          },
+        },
+      },
     sidebar: {
         width: 250,
     },
     sidebarHeading: {
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(1),
+        paddingLeft: theme.spacing(2),
     },
     sidebarLink: {
         '& > *': {
