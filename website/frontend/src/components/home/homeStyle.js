@@ -1,6 +1,19 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyleHome = makeStyles((theme) => ({
+    mainContainer: {
+        padding: theme.spacing(2),
+        margin: '0 auto', 
+        [theme.breakpoints.up('sm')]: {
+          maxWidth: '600px', 
+        },
+        [theme.breakpoints.up('md')]: {
+          maxWidth: '960px', 
+        },
+        [theme.breakpoints.up('lg')]: {
+          maxWidth: '1280px', 
+        },
+    },
     carouselContainer: {
         marginBottom: theme.spacing(3),
     },
@@ -50,23 +63,32 @@ export const useStyleHome = makeStyles((theme) => ({
         },
     },
 
-    //here code is about card image
     leftContainer: {
         backgroundColor: '#F7F7F7',
         padding: theme.spacing(3),
+    },
+    cardContainerWrapper: {
+        overflowX: 'auto',
+        '&::-webkit-scrollbar': {
+          display: 'none', 
+        },
+        '-ms-overflow-style': 'none', 
+        scrollbarWidth: 'none', 
     },
     cardContainer1: {
         display: 'flex',
         gap: theme.spacing(2),
         marginTop: theme.spacing(2),
-        justifyItems: 'center', // Add this line
+        flexWrap: 'nowrap', 
+        maxWidth: '100%',
     },
     categoryCard1: {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        height: '250px',
-        width: '200px',
+        height: '150px',
+        minWidth: '200px',
+        maxWidth: '200px',
         borderRadius: theme.spacing(2),
         overflow: 'hidden',
     },
@@ -83,6 +105,14 @@ export const useStyleHome = makeStyles((theme) => ({
         color: theme.palette.common.white,
         fontWeight: 'bold',
         color: 'red',
+    },
+    buttonGroupWrapper: {
+        overflowX: 'auto',
+        '&::-webkit-scrollbar': {
+          display: 'none', 
+        },
+        '-ms-overflow-style': 'none', 
+        scrollbarWidth: 'none', 
     },
     buttonGroup: {
         display: 'flex',
@@ -123,8 +153,8 @@ export const useStyleHome = makeStyles((theme) => ({
         padding: `${theme.spacing(2)}px 0`,
     },
     image: {
-        width: '100vw',
-        height: '300px',
+        maxWidth: '100%',
+        height: '200px',
         marginBottom: theme.spacing(2),
       },      
 }));
