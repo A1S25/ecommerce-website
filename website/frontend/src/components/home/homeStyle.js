@@ -153,7 +153,7 @@ export const useStyleHome = makeStyles((theme) => ({
         padding: `${theme.spacing(2)}px 0`,
     },
     image: {
-        maxWidth: '100%',
+        width: '100%',
         height: '200px',
         marginBottom: theme.spacing(2),
       },      
