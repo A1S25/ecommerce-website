@@ -48,7 +48,7 @@ export default function Header() {
                             onChange={(e) => setKeyword(e.target.value)}
                         />
                     </form>
-                    <div className={classes.navigationLinks}>
+                    <div className={classes.navigationLinks2}>
                         <Typography variant="body2" style={{ marginRight: '16px' }}> 1234567891 </Typography>
                         <Typography variant="body2"> abcd1234@gmail.com </Typography>
                     </div>
@@ -57,12 +57,12 @@ export default function Header() {
                     <IconButton className={classes.hamburgerIcon} onClick={toggleSidebar}>
                         {sidebarOpen ? <CloseIcon /> : <MenuIcon />}
                     </IconButton>
-                    <div className={classes.navigationLinks}>
+                    <div className={classes.navigationLinks1}>
                         <Link to={'/'} variant="body2" style={{ marginRight: '16px' }} className={classes.link}> Home </Link>
                         <Link to={'/about'} variant="body2" style={{ marginRight: '16px' }} className={classes.link}> About </Link>
                         <Link to={'/contact'} variant="body2" style={{ marginRight: '16px' }} className={classes.link}> Contact </Link>
                     </div>
-                    <div className={classes.navigationLinks}>
+                    <div className={classes.navigationLinks1}>
                         {categoryCards.map((category) => (
                             <Link to={`/products/${category.name}`} key={category.id} variant="body2" style={{ marginRight: '16px' }} className={classes.link}>{category.value}</Link>
                         ))}
@@ -92,18 +92,20 @@ export default function Header() {
                         <ListItem button>
                             <ListItemText primary="Heading 1" className={classes.sidebarHeading} />
                         </ListItem>
-                        <div className={classes.sidebarLink}>
-                            <Link href="#" variant="body2"> Link 1 </Link>
-                            <Link href="#" variant="body2"> Link 2 </Link>
-                            <Link href="#" variant="body2"> Link 3 </Link>
+                        <div>
+                            <Link to={'/'} variant="body2" style={{ display: 'block', marginBottom: '8px', paddingLeft: '40px' }}> Home </Link>
+                            <Link to={'/about'} variant="body2" style={{ display: 'block', marginBottom: '8px', paddingLeft: '40px' }}> About </Link>
+                            <Link to={'/contact'} variant="body2" style={{ display: 'block', marginBottom: '8px', paddingLeft: '40px' }}> Contact </Link>
                         </div>
                         <ListItem button>
-                            <ListItemText primary="Heading 2" className={classes.sidebarHeading} />
+                            <ListItemText primary="Category Links" className={classes.sidebarHeading} />
                         </ListItem>
-                        <div className={classes.sidebarLink}>
-                            <Link href="#" variant="body2"> Link 4 </Link>
-                            <Link href="#" variant="body2"> Link 5 </Link>
-                            <Link href="#" variant="body2"> Link 6 </Link>
+                        <div>
+                            {categoryCards.map((category) => (
+                                <Link to={`/products/${category.name}`} key={category.id} variant="body2" style={{ display: 'block', marginBottom: '8px', paddingLeft: '40px' }}>
+                                    {category.value}
+                                </Link>
+                            ))}
                         </div>
                     </List>
                 </div>
