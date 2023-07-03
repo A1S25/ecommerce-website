@@ -78,7 +78,7 @@ export default function Homes() {
   }, [dispatch, error, alert]);
 
   return (
-    <Fragment>
+    <Container maxWidth="lg" className={classes.mainContainer}>
       {loading ? (
         <Loader />
       ) : (
@@ -95,6 +95,7 @@ export default function Homes() {
 
           <div className={classes.leftContainer}>
             <Typography variant="h7">Shop Our Top Categories</Typography>
+                <div className={classes.cardContainerWrapper}>
             <div className={classes.cardContainer1}>
               {/* Category Cards */}
               {categoryCards.map((category) => (
@@ -107,6 +108,7 @@ export default function Homes() {
                 </Link>
               ))}
             </div>
+                </div>
           </div>
 
           <Container maxWidth="lg" className={classes.container}>
@@ -135,6 +137,7 @@ export default function Homes() {
 
           <div className={classes.branddiv}>
             <Typography variant="h7">Choose By Brand</Typography>
+                  <div className={classes.buttonGroupWrapper}>
             <div className={classes.buttonGroup}>
               {categoryCards.map((category) => (
                 <Link to={`/products/${category.name}`} key={category.id}>
@@ -148,6 +151,7 @@ export default function Homes() {
                 </Link>
               ))}
             </div>
+                </div>
           </div>
 
           <img src="https://source.unsplash.com/random" alt="Image" className={classes.image} />
@@ -178,6 +182,6 @@ export default function Homes() {
 
         </Fragment>
       )}
-    </Fragment>
+    </Container>
   );
 };
