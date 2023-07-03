@@ -30,7 +30,7 @@ const Footer = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={6} sm={2}>
               <Typography variant="subtitle2" className={classes.shopMenu}> Shop </Typography>
               <Typography variant="body2">
                 <Link href="#" className={classes.link}> All Products </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <Link href="#" className={classes.link}> SmartPhones </Link>
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={6} sm={2}>
               <Typography variant="subtitle2" className={classes.companyLinks}> Company </Typography>
               <Typography variant="body2">
                 <Link href="#" className={classes.link}> About </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
                 <Link href="#" className={classes.link}> Careers </Link>
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={6} sm={2}>
               <Typography variant="subtitle2" className={classes.serviceLinks}> Service </Typography>
               <Typography variant="body2">
                 <Link href="#" className={classes.link}> Shopping & Delivery </Link>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <Link href="#" className={classes.link}> Account Signup </Link>
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={6} sm={2}>
               <Typography variant="subtitle2" className={classes.supportLinks}> Support </Typography>
               <Typography variant="body2">
                 <Link href="#" className={classes.link}> FAQs </Link>
