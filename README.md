@@ -86,7 +86,7 @@ Join us on Ecommerce Platform and unlock a world of endless possibilities. Wheth
 
 **Deployed On:**
 
-![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![render](https://img.shields.io/badge/Render-430098?style=for-the-badge&logo=Render&logoColor=white)
 
 **Image Management:** [Cloudinary](https://cloudinary.com/)
 **Mail Service:** [Sendgrid](https://sendgrid.com/)
