@@ -6,7 +6,7 @@ Welcome to Ecommerce Platform! Our robust and user-friendly platform offers a co
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#Introduction">Introduction</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
