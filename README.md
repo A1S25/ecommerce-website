@@ -11,6 +11,12 @@ Welcome to Ecommerce Platform! Our robust and user-friendly platform offers a co
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#License">License</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
 
