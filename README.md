@@ -1,6 +1,8 @@
 # ecommerce-website
 Welcome to Ecommerce Platform! Our robust and user-friendly platform offers a comprehensive shopping experience for users, seamless product management for sellers, and powerful administrative tools for administrators. With features such as secure user registration and authentication, intuitive product catalog and search, efficient shopping cart and checkout, advanced order management, and interactive rating and reviews, Ecommerce Platform empowers buyers, sellers, and administrators alike. Enjoy a seamless ecommerce journey with a responsive design, top-notch security, and a range of convenient features.
 
+# Live Link
+[Live Demo](https://ecommerce-website-ufpp.onrender.com)
 
 # Detail of Content
 <details>
