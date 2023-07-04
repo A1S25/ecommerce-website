@@ -82,7 +82,7 @@ Join us on Ecommerce Platform and unlock a world of endless possibilities. Wheth
 
 **Payment Gateway:**
 
-![stripe](https://img.shields.io/badge/Paytm-002970?style=for-the-badge&logo=stripe&logoColor=00BAF2)
+![stripe](https://img.shields.io/badge/Stripe-002970?style=for-the-badge&logo=stripe&logoColor=00BAF2)
 
 **Deployed On:**
 
