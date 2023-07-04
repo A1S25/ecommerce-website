@@ -13,13 +13,13 @@ Welcome to Ecommerce Platform! Our robust and user-friendly platform offers a co
       </ul>
     </li>
     <li>
-      <a href="#KeyFeatures">Key Features</a>
+      <a href="#Key Features">Key Features</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
-      <a href="#Visual ">Visual </a>
+      <a href="#Visual">Visual </a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -55,7 +55,7 @@ Welcome to Ecommerce Platform! Our robust and user-friendly platform offers a co
       </ul>
     </li>
     <li>
-      <a href="#Contact Invformation">Contact Information</a>
+      <a href="#Contact Information">Contact Information</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
