@@ -11,3 +11,5 @@ Welcome to Ecommerce Platform! Our robust and user-friendly platform offers a co
     </li>
   </ol>
 </details>
+
+![](./demo/video1.gif)
