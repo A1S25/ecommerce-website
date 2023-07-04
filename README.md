@@ -13,7 +13,7 @@ Welcome to Ecommerce Platform! Our robust and user-friendly platform offers a co
       </ul>
     </li>
     <li>
-      <a href="#Key Features">Key Features</a>
+      <a href="#Key">Key Features</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
