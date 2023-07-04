@@ -38,7 +38,7 @@ Join us on Ecommerce Platform and unlock a world of endless possibilities. Wheth
 ## Key Features
 - Login/Signup User Account
 - Update Profile/Password User Account
-- Reset Password Mail using Sendgrid
+- Reset Password Mail using Smpt
 - Cart Add/Remove Items | Update Quantities
 - Save For Later Add/Remove Items
 - Wishlist Add/Remove Items
@@ -89,7 +89,7 @@ Join us on Ecommerce Platform and unlock a world of endless possibilities. Wheth
 ![render](https://img.shields.io/badge/Render-430098?style=for-the-badge&logo=Render&logoColor=white)
 
 **Image Management:** [Cloudinary](https://cloudinary.com/)
-**Mail Service:** [Sendgrid](https://sendgrid.com/)
+**Mail Service:** [smtp](https://www.smtp.com/)
 
 
 
