@@ -6,80 +6,33 @@ Welcome to Ecommerce Platform! Our robust and user-friendly platform offers a co
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#Introduction">Introduction</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#Key">Key Features</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#Visual">Visual </a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#Technology Used">Technology Used</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#Installation and Usage">Installation and Usage</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#Contributing Guidlines">Contributing Guidlines</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#Roadmap and Future Plans">Roadmap and Future Plans</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#License">License</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#Contact Information">Contact Information</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#key-features">Key Features</a></li>
+    <li><a href="#visual">Visual</a></li>
+    <li><a href="#technology-used">Technology Used</a></li>
+    <li><a href="#installation-and-usage">Installation and Usage</a></li>
+    <li><a href="#contributing-guidelines">Contributing Guidelines</a></li>
+    <li><a href="#roadmap-and-future-plans">Roadmap and Future Plans</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact-information">Contact Information</a></li>
   </ol>
 </details>
 
-
-
 # Introduction
 
-# Key Features
+## Key Features
 
-# Visual 
+## Visual
 ![](./demo/video1.gif)
 
-# Technology Used
+## Technology Used
 
-# Installation and Usage
+## Installation and Usage
 
-# Contributing Guidlines
+## Contributing Guidelines
 
-# Roadmap and Future Plans
+## Roadmap and Future Plans
 
-# License
+## License
 
-# Contact Information
+## Contact Information
