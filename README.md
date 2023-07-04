@@ -58,6 +58,8 @@ Join us on Ecommerce Platform and unlock a world of endless possibilities. Wheth
 
 
 ## Visual
+![](./demo/HomePage.gif)
+
 ![](./demo/ProductDetailPage.gif)
 
 ## Technology Used
